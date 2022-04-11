@@ -60,5 +60,25 @@ namespace network_w8_p1
             D = new ShapeContainer();
             this.Controls.Add(D);
         }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            stP = e.Location;
+            p = stP.X.ToString() + "," + stP.Y.ToString();
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                LineShape L = new LineShape();
+                L.StartPoint = stP;
+                L.EndPoint = e.Location;
+                L.Parent = C;
+                stP = e.Location;
+
+                p += "/" + stP.X.ToString() + "," + stP.Y.ToString(); //持續記錄座標
+            }
+        }
     }
 }
