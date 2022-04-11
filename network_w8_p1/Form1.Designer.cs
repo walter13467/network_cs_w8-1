@@ -36,6 +36,10 @@ namespace network_w8_p1
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.radioButton_red = new System.Windows.Forms.RadioButton();
+            this.radioButton_green = new System.Windows.Forms.RadioButton();
+            this.radioButton_blue = new System.Windows.Forms.RadioButton();
+            this.radioButton_black = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -94,20 +98,75 @@ namespace network_w8_p1
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button1.Location = new System.Drawing.Point(1084, 58);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 33);
             this.button1.TabIndex = 6;
-            this.button1.Text = "傳送";
+            this.button1.Text = "連線";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // radioButton_red
+            // 
+            this.radioButton_red.AutoSize = true;
+            this.radioButton_red.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_red.ForeColor = System.Drawing.Color.Red;
+            this.radioButton_red.Location = new System.Drawing.Point(64, 157);
+            this.radioButton_red.Name = "radioButton_red";
+            this.radioButton_red.Size = new System.Drawing.Size(44, 25);
+            this.radioButton_red.TabIndex = 7;
+            this.radioButton_red.TabStop = true;
+            this.radioButton_red.Text = "紅";
+            this.radioButton_red.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_green
+            // 
+            this.radioButton_green.AutoSize = true;
+            this.radioButton_green.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_green.ForeColor = System.Drawing.Color.DarkGreen;
+            this.radioButton_green.Location = new System.Drawing.Point(64, 188);
+            this.radioButton_green.Name = "radioButton_green";
+            this.radioButton_green.Size = new System.Drawing.Size(44, 25);
+            this.radioButton_green.TabIndex = 8;
+            this.radioButton_green.TabStop = true;
+            this.radioButton_green.Text = "綠";
+            this.radioButton_green.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_blue
+            // 
+            this.radioButton_blue.AutoSize = true;
+            this.radioButton_blue.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_blue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.radioButton_blue.Location = new System.Drawing.Point(64, 219);
+            this.radioButton_blue.Name = "radioButton_blue";
+            this.radioButton_blue.Size = new System.Drawing.Size(44, 25);
+            this.radioButton_blue.TabIndex = 9;
+            this.radioButton_blue.TabStop = true;
+            this.radioButton_blue.Text = "藍";
+            this.radioButton_blue.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_black
+            // 
+            this.radioButton_black.AutoSize = true;
+            this.radioButton_black.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_black.Location = new System.Drawing.Point(64, 250);
+            this.radioButton_black.Name = "radioButton_black";
+            this.radioButton_black.Size = new System.Drawing.Size(44, 25);
+            this.radioButton_black.TabIndex = 10;
+            this.radioButton_black.TabStop = true;
+            this.radioButton_black.Text = "黑";
+            this.radioButton_black.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1258, 570);
+            this.Controls.Add(this.radioButton_black);
+            this.Controls.Add(this.radioButton_blue);
+            this.Controls.Add(this.radioButton_green);
+            this.Controls.Add(this.radioButton_red);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -136,6 +195,10 @@ namespace network_w8_p1
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton_red;
+        private System.Windows.Forms.RadioButton radioButton_green;
+        private System.Windows.Forms.RadioButton radioButton_blue;
+        private System.Windows.Forms.RadioButton radioButton_black;
     }
 }
 

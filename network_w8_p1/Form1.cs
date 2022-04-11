@@ -100,6 +100,16 @@ namespace network_w8_p1
                 LineShape L = new LineShape();
                 L.StartPoint = stP;
                 L.EndPoint = e.Location;
+
+                if (radioButton_red.Checked)
+                    L.BorderColor = Color.Red;
+                if (radioButton_green.Checked)
+                    L.BorderColor = Color.Green;
+                if (radioButton_blue.Checked)
+                    L.BorderColor = Color.Blue;
+                if (radioButton_black.Checked)
+                    L.BorderColor = Color.Black;
+
                 L.Parent = C;
                 stP = e.Location;
 
