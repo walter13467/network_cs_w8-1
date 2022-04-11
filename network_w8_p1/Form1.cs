@@ -27,9 +27,38 @@ namespace network_w8_p1
         Point stP;
         string p;
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void Listen()
         {
 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                Th.Abort();
+                U.Close();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Control.CheckForIllegalCrossThreadCalls = false;
+            Th = new Thread(Listen);
+            Th.Start();
+            button1.Enabled = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            C = new ShapeContainer();
+            this.Controls.Add(C);
+            D = new ShapeContainer();
+            this.Controls.Add(D);
         }
     }
 }
